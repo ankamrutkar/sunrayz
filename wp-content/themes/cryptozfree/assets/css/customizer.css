@@ -1,0 +1,200 @@
+/* ================
+	Customizer 
+===================*/
+#customize-controls [id*="background_image"]>h3:before,
+#customize-controls [id*="header_image"]>h3:before {
+    content: "\f161";
+}
+
+#customize-controls [id*="title_tagline"]>h3:before {
+    content: "\f128";
+}
+
+#customize-controls [id*="colors"]>h3:before {
+    content: "\f100";
+}
+
+#customize-controls [id*="preloader_section"]>h3:before {
+    content: "\f531";
+}
+
+#customize-controls [id*="nav_menus"]>h3:before{
+    content: "\f333";
+}
+
+#customize-controls [id*="typography_section"]>h3:before{
+    content: "\f108";
+}
+
+
+#customize-controls [id*="cryptozfree_footer_section"]>h3:before, 
+#customize-controls [id*="cryptozfree_header_section"]>h3:before {
+    content: "\f491";
+}
+
+#customize-controls [id*="jetpack_content_options"]>h3:before {
+    content: "\f309";
+}
+
+#customize-controls [id*="panel-widgets"]>h3:before {
+    content: "\f107";
+}
+
+#customize-controls [id*="static_front_page"]>h3:before {
+    content: "\f116";
+}
+
+#customize-controls [id*="panel-tribe_customizer"]>h3:before {
+    content: "\f145";
+}
+
+#customize-controls [id*="panel-woocommerce"]>h3:before {
+    content: "\f174";
+}
+
+#customize-controls [id*="section-custom_css"]>h3:before {
+    content: "\f226";
+}
+
+#customize-controls [id*="cryptozfree_layout_section"]>h3:before {
+    content: "\f489";
+}
+
+#customize-controls [id*="cryptozfree_language_section"]>h3:before {
+    content: "\f326";
+}
+
+#customize-controls [id*="page_title_section"]>h3:before {
+    content: "\f13d";
+}
+
+#customize-controls [id^="accordion-panel-"]>h3:before,
+#customize-controls [id^="accordion-section-"]>h3:before {
+	font-family: dashicons;
+    padding-right: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 1;
+    font-family: dashicons;
+    text-decoration: inherit;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: top;
+    text-align: center;
+    transition: color .1s ease-in 0;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+#customize-controls .control-section .accordion-section-title:focus,
+#customize-controls .control-section .accordion-section-title:hover, 
+#customize-controls .control-section.open .accordion-section-title, 
+#customize-controls .control-section:hover>.accordion-section-title {
+    color: #222;
+    background: #eee;
+    border-left-color: #eee;
+}
+
+#customize-controls .control-section .accordion-section-title:hover::after{
+    color: #222;
+}
+
+#customize-theme-controls .customize-pane-parent #accordion-section-background_image,
+#customize-theme-controls .customize-pane-parent #accordion-section-header_image,
+.customize-pane-child #customize-control-header_textcolor,
+.customize-pane-child #customize-control-background_color {
+    display: none !important;
+} 
+
+
+
+/* ==========================================================================
+   Toggle Switch
+   ========================================================================== */
+
+.toggle-switch-control .customize-control-title {
+    display: inline-block;
+}
+.toggle-switch {
+    position: relative;
+    width: 64px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    float: right;
+}
+.toggle-switch .toggle-switch-checkbox {
+    display: none;
+}
+.toggle-switch .toggle-switch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+}
+.toggle-switch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.toggle-switch-inner:before, .toggle-switch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 22px;
+    padding: 0;
+    line-height: 22px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.toggle-switch-inner:before {
+    content: "ON";
+    padding-left: 8px;
+    background-color: #1545CB;
+    color: #FFFFFF;
+}
+.toggle-switch-inner:after {
+    content: "OFF";
+    padding-right: 8px;
+    background-color: #EEEEEE;
+    color: #999999;
+    text-align: right;
+}
+.toggle-switch-switch {
+    display: block;
+    width: 16px;
+    margin: 3px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 38px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.toggle-switch-checkbox:checked+.toggle-switch-label .toggle-switch-inner {
+    margin-left: 0;
+}
+.toggle-switch-checkbox:checked+.toggle-switch-label .toggle-switch-switch {
+    right: 0px;
+}
+
+#customize-theme-controls ul #customize-control-cryptozfree_gradient_first_color {
+    border-top: 1px solid #222;
+}
+
+.components-popover {
+  position: fixed !important;
+  bottom: 0 !important;
+}
